@@ -1,6 +1,6 @@
 # CAP LIVECHAT SF [![Generic badge](https://img.shields.io/badge/CAP-Active-<COLOR>.svg)](https://shields.io/)
 
-**CAP AUTHENTLIVECHATICATION** is a module for **Angular**
+**CAP LIVECHAT** is a module for **Angular**
 
 ## **Previous requirements**
 
