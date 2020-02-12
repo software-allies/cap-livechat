@@ -81,19 +81,18 @@ export class ChatComponent implements OnInit {
   // settingS: any
   constructor(
     public settingService: SettingService,
-    
+
     @Inject(PLATFORM_ID) private platformId: string,
     @Inject(DOCUMENT) private document: Document,
     private ngZone: NgZone,
-    ) {
+  ) {
     this.scriptUrl = settingService.scriptUrl
   }
 
   ngOnInit() {
-    console.log('settingService: ', this.settingService);
     if (isPlatformBrowser(this.platformId)) {
       this.ngZone.runOutsideAngular(() => {
-        const initESW =  (gslbBaseURL:any) =>{
+        const initESW = (gslbBaseURL: any) => {
           embedded_svc.settings.displayHelpButton = true; // Or false
           embedded_svc.settings.language = ''; // For example, enter 'en' or 'en-US'
           embedded_svc.settings.enabledFeatures = ['LiveAgent'];
@@ -108,7 +107,7 @@ export class ChatComponent implements OnInit {
             deploymentId: this.settingService.deploymentId,
             buttonId: this.settingService.buttonId,
             baseLiveAgentURL: this.settingService.baseLiveAgentURL,
-            eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0j000000CaRvEAK_16c91587c78',
+            eswLiveAgentDevName: this.settingService.eswLiveAgentDevName,
             isOfflineSupportEnabled: false
           }
           );

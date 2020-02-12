@@ -10,6 +10,7 @@ export interface IConfig {
   buttonId: string;
   baseLiveAgentURL: string;
   scriptUrl: string;
+  eswLiveAgentDevName: string;
 }
 
 @Injectable()
@@ -24,7 +25,7 @@ export class SettingService {
   buttonId: string;
   baseLiveAgentURL: string;
   scriptUrl: string;
-
+  eswLiveAgentDevName: string;
   constructor(@Optional() config: IConfig) {
     if (config) {
       this.embeddedServiceName = config.embeddedServiceName
@@ -36,6 +37,7 @@ export class SettingService {
       this.buttonId = config.buttonId
       this.baseLiveAgentURL = config.baseLiveAgentURL
       this.scriptUrl = config.scriptUrl
+      this.eswLiveAgentDevName= config.eswLiveAgentDevName
 
     }
   }

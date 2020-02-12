@@ -13,7 +13,7 @@ export class LiveChatService {
   buttonId: string;
   baseLiveAgentURL: string;
   scriptUrl: string;
-  configurations: any;
+  eswLiveAgentDevName: string;
 
   constructor() {
 
