@@ -1,11 +1,49 @@
-# CAP LIVECHAT SF [![Generic badge](https://img.shields.io/badge/CAP-Active-<COLOR>.svg)](https://shields.io/)
+# CAP LIVECHAT SF 💻 [![Generic badge](https://img.shields.io/badge/CAP-Active-<COLOR>.svg)](https://shields.io/) 
 
-**CAP LIVECHAT** is a module for **Angular**
+Create a chat using SalesForce and Angular  
 
 ## **Previous requirements**
 
+Before to include this package into your Angular application, you must be configurated the live agent into your salesforce application [here](https://help.salesforce.com/articleView?id=snapins_chat_setup.htm&type=5).
+
 ### Installation
+
+``` npm install cap ```
 
 ### **Implementation into a module**
 
+``` 
+import { CapLiveChatModule } from 'cap-livechat';
+
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    CapLiveChatModule.forRoot({
+      embeddedServiceName: 'Your embedded service name',
+      idServiceName: 'Your ID service name',
+      urlSandbox: 'Your URL Sandbox',
+      urlDomain: 'Your URL Domain',
+      baseLiveAgentContentURL: 'Your base live agent content URL',
+      deploymentId: 'Your deployment ID',
+      buttonId: 'Your button ID',
+      baseLiveAgentURL: 'Your base live agent URL',
+      scriptUrl: 'Your script URL',
+      eswLiveAgentDevName: 'Your esw live Agent Dev Name'
+    })
+  ]
+})
+
+```
+
 ### **HTML tags**
+
+`<cap-live-chat-sf></cap-live-chat-sf>` 
+
+![Alt text](./assets/images/cap-livechat.png?raw=true "caplivechat")
+
+### **Local test**
+
+In case that you don't have a domain and you want to test the CapLiveChat package we recomend you [ngrok](https://ngrok.com/). ``Ngrok`` provide a multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay. [ngrok package](https://www.npmjs.com/package/ngrok).
