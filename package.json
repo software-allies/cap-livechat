@@ -1,6 +1,6 @@
 {
   "name": "cap-livechat-sf",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An amazing module for Angular using LiveChat SF.",
   "main": "bundles/compoplace.umd.js",
   "module": "index.js",
@@ -8,7 +8,8 @@
   "keywords": [
     "Salesforce",
     "LiveChat",
-    "Angular"
+    "Angular",
+    "Live Agent"
   ],
   "author": "Diego SanMo",
   "license": "MIT",
