@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/software-allies/cap-storage-aws/tree/feature/cap-aws-angular"
+    "url": "https://github.com/software-allies/cap-livechat/tree/development"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,7 +33,6 @@
     "@angular/compiler": "^8.2.13",
     "@angular/compiler-cli": "^8.2.13",
     "rollup": "^0.62.0",
-    "typescript": "^3.5.1",
     "uglify-js": "^3.4.2"
   },
   "peerDependencies": {

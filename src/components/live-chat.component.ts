@@ -1,10 +1,11 @@
-import { Component, OnInit, Inject, PLATFORM_ID, NgZone, Optional } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, NgZone } from '@angular/core';
 import { isPlatformBrowser, DOCUMENT } from '@angular/common';
-import { SettingService } from '../services/setting.service'
+import { SettingService } from '../services/setting.service';
 
 declare var window: any;
 declare var embedded_svc: any;
 
+// @dynamic
 @Component({
   selector: 'cap-live-chat-sf',
   template: '',
