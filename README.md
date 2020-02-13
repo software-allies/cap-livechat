@@ -46,4 +46,4 @@ import { CapLiveChatModule } from 'cap-livechat';
 
 ### **Local test**
 
-In case that you don't have a domain and you want to test the CapLiveChat package we recomend you [ngrok](https://ngrok.com/). ``Ngrok`` provide a multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay. [ngrok package](https://www.npmjs.com/package/ngrok).
+In case that you don't have a domain and you want to test the CapLiveChat package we recomend you [ngrok](https://ngrok.com/). ``Ngrok`` provide a multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay. For detailed inspection and replay. Follow this [link](https://www.npmjs.com/package/ngrok) for more instructions.
