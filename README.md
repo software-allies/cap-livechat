@@ -4,7 +4,7 @@ Create a chat using SalesForce and Angular
 
 ## **Previous requirements**
 
-Before to include this package into your Angular application, you must be configurated the live agent into your salesforce application [here](https://help.salesforce.com/articleView?id=snapins_chat_setup.htm&type=5).
+Before installing this package into your Angular application, you must be configured the live agent into your salesforce application. Follow this [link](https://help.salesforce.com/articleView?id=snapins_chat_setup.htm&type=5) for more instructions.
 
 ### Installation
 
