@@ -42,7 +42,7 @@ import { CapLiveChatModule } from 'cap-livechat';
 
 `<cap-live-chat-sf></cap-live-chat-sf>` 
 
-![Alt text](./assets/images/cap-livechat.png?raw=true "caplivechat")
+![Alt text](https://github.com/software-allies/cap-livechat/blob/development/assets/images/cap-livechat.png?raw=true "caplivechat")
 
 ### **Local test**
 
