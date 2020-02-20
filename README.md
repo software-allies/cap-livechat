@@ -8,12 +8,12 @@ Before installing this package into your Angular application, you must be config
 
 ### Installation
 
-``` npm install cap ```
+``` npm install cap-livechat-sf ```
 
 ### **Implementation into a module**
 
 ``` 
-import { CapLiveChatModule } from 'cap-livechat';
+import { CapLiveChatModule } from 'cap-livechat-sf';
 
 @NgModule({
   declarations: [
