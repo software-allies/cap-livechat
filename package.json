@@ -1,6 +1,6 @@
 {
   "name": "cap-livechat-sf",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An amazing module for Angular using LiveChat SF.",
   "main": "bundles/compoplace.umd.js",
   "module": "index.js",

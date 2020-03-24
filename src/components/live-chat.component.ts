@@ -14,7 +14,7 @@ declare var embedded_svc: any;
       #liveAgentClientChat .liveAgentStateWaiting {
         background-color: #b80325 !important;
         border: none !important;
-      }
+      };
       
       #waitingMessage {
         height: 100% !important;
@@ -22,22 +22,27 @@ declare var embedded_svc: any;
         vertical-align: middle !important;
         text-align: center !important;
         display: none !important;
-      }
+      };
+
       #liveAgentClientChat .liveAgentStateWaiting #waitingMessage {
         display: table !important;
-      }
+      };
+
       #liveAgentSaveButton {
         z-index: 2 !important;
         width: 100px !important;
-      }
+      };
+
       .liveAgentChatElement .liveAgentEndButton {
         z-index: 2 !important;
         width: 100px !important;
-      }
+      };
+
       .liveAgentChatElement {
         font-family: Calibri !important;
         font-size: 1.5em !important;
-      }
+      };
+
       .liveAgentChatInput {
         height: 25px !important;
         border-width: 1px !important;
@@ -47,7 +52,8 @@ declare var embedded_svc: any;
         background: $color-white !important;
         display: block !important;
         width: 99% !important;
-      }
+      };
+
       .liveAgentSendButton {
         display: block !important;
         width: 60px !important;
@@ -56,7 +62,8 @@ declare var embedded_svc: any;
         position: absolute !important;
         top: 0 !important;
         right: -67px !important;
-      }
+      };
+
       #liveAgentChatLog {
         width: auto !important;
         height: auto !important;
@@ -66,14 +73,17 @@ declare var embedded_svc: any;
         left: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
-      }
+      };
+
       .embeddedServiceHelpButton .helpButton .uiButton {
         background-color: #b80325 !important;
         font-family: "Arial", sans-serif;
-      }
+      };
+
       .embeddedServiceHelpButton .helpButton {
         right: 32px !important;
-      }
+      };
+      
     `
   ]
 })
@@ -84,7 +94,7 @@ export class ChatComponent implements OnInit {
     public settingService: SettingService,
 
     @Inject(PLATFORM_ID) private platformId: string,
-    @Inject(DOCUMENT) private document: Document,
+    @Inject(DOCUMENT) private document: any,
     private ngZone: NgZone,
   ) {
     this.scriptUrl = settingService.scriptUrl
