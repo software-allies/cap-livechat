@@ -15,7 +15,7 @@ declare var embedded_svc: any;
         background-color: #b80325 !important;
         border: none !important;
       };
-      
+
       #waitingMessage {
         height: 100% !important;
         width: 100% !important;
@@ -83,7 +83,7 @@ declare var embedded_svc: any;
       .embeddedServiceHelpButton .helpButton {
         right: 32px !important;
       };
-      
+
     `
   ]
 })

@@ -1,6 +1,6 @@
 {
   "name": "cap-livechat-sf",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An amazing module for Angular using LiveChat SF.",
   "main": "bundles/compoplace.umd.js",
   "module": "index.js",
@@ -11,30 +11,19 @@
     "Angular",
     "Live Agent"
   ],
-  "author": "Diego SanMo",
+  "author": {
+    "name": "Diego SanMo",
+    "url": "https://github.com/DiegoSanMo"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/software-allies/cap-livechat/tree/development"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "otherbuild": "rm -rf dist && tsc",
-    "transpile": "ngc",
-    "package": "rollup -c",
-    "minify": "uglifyjs dist/bundles/capstorageaws.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/capstorageaws.umd.min.js",
-    "build": "npm run transpile && npm run package && npm run minify && cp README.md dist/README.md && cp package.json dist/package.json && cp -r ./assets dist/assets"
+    "packagr": "ng-packagr -p ng-package.json"
   },
-  "homepage": "",
-  "bugs": {
-    "url": ""
-  },
-  "dependencies": {
-    "@angular/compiler": "^8.2.13",
-    "@angular/compiler-cli": "^8.2.13",
-    "rollup": "^0.62.0",
-    "uglify-js": "^3.4.2"
-  },
+  "homepage": "https://www.softwareallies.com/",
   "peerDependencies": {
     "@angular/compiler": "^8.2.13",
     "@angular/compiler-cli": "^8.2.13",
@@ -43,8 +32,23 @@
     "uglify-js": "^3.4.2"
   },
   "devDependencies": {
-    "@angular/compiler": "^8.2.13",
-    "@angular/compiler-cli": "^8.2.13",
+    "@angular-devkit/build-angular": "~0.803.23",
+    "@angular/cli": "~8.3.23",
+    "@angular/common": "~8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/compiler-cli": "~8.2.14",
+    "@angular/core": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/language-service": "~8.2.14",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "@types/jasmine": "~3.3.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "^5.0.0",
+    "ng-packagr": "^9.0.0",
+    "zone.js": "~0.9.1",
     "rollup": "^0.62.0",
     "typescript": "^3.5.1",
     "uglify-js": "^3.4.2"

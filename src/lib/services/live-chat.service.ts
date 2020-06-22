@@ -1,4 +1,5 @@
 import { Injectable, Optional } from '@angular/core';
+
 @Injectable()
 export class LiveChatService {
   embeddedServiceName: string;
@@ -12,7 +13,5 @@ export class LiveChatService {
   scriptUrl: string;
   eswLiveAgentDevName: string;
 
-  constructor() {
-
-  }
+  constructor() {}
 }

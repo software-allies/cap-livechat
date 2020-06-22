@@ -14,7 +14,6 @@ export interface IConfig {
 }
 
 @Injectable()
-
 export class SettingService {
   embeddedServiceName: string;
   idServiceName: string;
@@ -28,16 +27,16 @@ export class SettingService {
   eswLiveAgentDevName: string;
   constructor(@Optional() config: IConfig) {
     if (config) {
-      this.embeddedServiceName = config.embeddedServiceName
-      this.idServiceName = config.idServiceName
-      this.urlSandbox = config.urlSandbox
-      this.urlDomain = config.urlDomain
-      this.baseLiveAgentContentURL = config.baseLiveAgentContentURL
-      this.deploymentId = config.deploymentId
-      this.buttonId = config.buttonId
-      this.baseLiveAgentURL = config.baseLiveAgentURL
-      this.scriptUrl = config.scriptUrl
-      this.eswLiveAgentDevName= config.eswLiveAgentDevName
+      this.embeddedServiceName = config.embeddedServiceName;
+      this.idServiceName = config.idServiceName;
+      this.urlSandbox = config.urlSandbox;
+      this.urlDomain = config.urlDomain;
+      this.baseLiveAgentContentURL = config.baseLiveAgentContentURL;
+      this.deploymentId = config.deploymentId;
+      this.buttonId = config.buttonId;
+      this.baseLiveAgentURL = config.baseLiveAgentURL;
+      this.scriptUrl = config.scriptUrl;
+      this.eswLiveAgentDevName= config.eswLiveAgentDevName;
 
     }
   }
