@@ -13,7 +13,6 @@ export interface IConfig {
   eswLiveAgentDevName: string;
 }
 
-@Injectable()
 export class SettingService {
   embeddedServiceName: string;
   idServiceName: string;

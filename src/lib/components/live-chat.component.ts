@@ -97,7 +97,7 @@ export class ChatComponent implements OnInit {
     @Inject(DOCUMENT) private document: any,
     private ngZone: NgZone,
   ) {
-    this.scriptUrl = settingService.scriptUrl
+    this.scriptUrl = settingService.scriptUrl;
   }
 
   ngOnInit() {
@@ -136,5 +136,4 @@ export class ChatComponent implements OnInit {
       });
     }
   }
-
 }
